@@ -1,2 +1,5 @@
 # ignore notes
 notes.txt
+
+jupyter
+*.DS_Store
