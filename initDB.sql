@@ -3,6 +3,7 @@ Create ISDB SQL Tables
 2-17-19
 */
 
+DROP SCHEMA IF EXISTS isdb;
 CREATE DATABASE isdb;
 USE isdb;
 
@@ -12,43 +13,43 @@ CREATE TABLE User (
 );
 
 CREATE TABLE Song (
-	sid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	songId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(64) NOT NULL,
 	relDate VARCHAR(32)
 );
 
 CREATE TABLE Artist (
-	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	artistId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(64) NOT NULL
 );
 
 CREATE TABLE Album (
-	aid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	albumId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(64) NOT NULL,
 	relDate VARCHAR(32),
 	numTracks INT
 );
 
 CREATE TABLE SongAlbum (
-	sid INT NOT NULL,
-	aid INT NOT NULL,
-	PRIMARY KEY (sid, aid),
-	FOREIGN KEY(sid) REFERENCES Song(sid),
-	FOREIGN KEY(aid) REFERENCES Album(aid)
+	songId INT NOT NULL,
+	albumId INT NOT NULL,
+	PRIMARY KEY (songId, albumId),
+	FOREIGN KEY(songId) REFERENCES Song(songId),
+	FOREIGN KEY(albumId) REFERENCES Album(albumId)
 );
 
-CREATE TABLE SongArt (
-	sid INT NOT NULL,
-	id INT NOT NULL,
-	PRIMARY KEY (sid, id),
-	FOREIGN KEY(sid) REFERENCES Song(sid),
-	FOREIGN KEY(id) REFERENCES Artist(id)
+CREATE TABLE SongArtist (
+	songId INT NOT NULL,
+	artistId INT NOT NULL,
+	PRIMARY KEY (songId, artistId),
+	FOREIGN KEY(songId) REFERENCES Song(songId),
+	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
 );
 
-CREATE TABLE AlbumArt (
-	aid INT NOT NULL,
-	id INT NOT NULL,
-	PRIMARY KEY (aid, id),
-	FOREIGN KEY(aid) REFERENCES Album(aid),
-	FOREIGN KEY(id) REFERENCES Artist(aid)
+CREATE TABLE AlbumArtist (
+	albumId INT NOT NULL,
+	artistId INT NOT NULL,
+	PRIMARY KEY (albumId, artistId),
+	FOREIGN KEY(albumId) REFERENCES Album(albumId),
+	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
 );
