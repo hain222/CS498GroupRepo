@@ -1,3 +1,7 @@
+/* Create ISDB SQL Tables
+	2-17-19
+*/
+
 create database isdb;
 use isdb;
 
