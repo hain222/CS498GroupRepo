@@ -1,53 +1,54 @@
-/* Create ISDB SQL Tables
-	2-17-19
+/*
+Create ISDB SQL Tables
+2-17-19
 */
 
-create database isdb;
-use isdb;
+CREATE DATABASE isdb;
+USE isdb;
 
-	create table User(
-		username varchar(32) not null primary key,
-		password varchar(32) not null
-	);
-	
-	create table Song(
-		sid int not null primary key auto_increment,
-		Name varchar(64) not null,
-		relDate varchar(32)
-	);
+CREATE TABLE User (
+	username VARCHAR(32) NOT NULL PRIMARY KEY,
+	password VARCHAR(32) NOT NULL
+);
 
-	create table Artist(
-		id int not null primary key auto_increment,
-		Name varchar(64) not null
-	);
+CREATE TABLE Song (
+	sid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(64) NOT NULL,
+	relDate VARCHAR(32)
+);
 
-	create table Album(
-		aid int not null primary key auto_increment,
-		Name varchar(64) not null,
-		relDate varchar(32),
-		numTracks int
-	);
+CREATE TABLE Artist (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(64) NOT NULL
+);
 
-	create table SongAlb(
-		sid int not null,
-		aid int not null,
-		primary key (sid, aid),
-		foreign key (sid) references Song(sid),
-		foreign key (aid) references Album(aid)
-	);
+CREATE TABLE Album (
+	aid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(64) NOT NULL,
+	relDate VARCHAR(32),
+	numTracks INT
+);
 
-	create table SongArt(
-		sid int not null,
-		id int not null,
-		primary key (sid, id),
-		foreign key (sid) references Song(sid),
-		foreign key (id) references Artist(id)
-	);
+CREATE TABLE SongAlbum (
+	sid INT NOT NULL,
+	aid INT NOT NULL,
+	PRIMARY KEY (sid, aid),
+	FOREIGN KEY(sid) REFERENCES Song(sid),
+	FOREIGN KEY(aid) REFERENCES Album(aid)
+);
 
-	create table AlbArt(
-		aid int not null,
-		id int not null,
-		primary key (aid, id),
-		foreign key (aid) references Album(aid),
-		foreign key (id) references Artist(aid)
-	);
+CREATE TABLE SongArt (
+	sid INT NOT NULL,
+	id INT NOT NULL,
+	PRIMARY KEY (sid, id),
+	FOREIGN KEY(sid) REFERENCES Song(sid),
+	FOREIGN KEY(id) REFERENCES Artist(id)
+);
+
+CREATE TABLE AlbumArt (
+	aid INT NOT NULL,
+	id INT NOT NULL,
+	PRIMARY KEY (aid, id),
+	FOREIGN KEY(aid) REFERENCES Album(aid),
+	FOREIGN KEY(id) REFERENCES Artist(aid)
+);
