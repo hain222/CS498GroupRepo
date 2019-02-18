@@ -1,5 +1,6 @@
 # ignore notes
 notes.txt
 
-jupyter
 *.DS_Store
+*.ipynb_checkpoints
+*.cache*
