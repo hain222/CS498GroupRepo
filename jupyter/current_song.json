@@ -1,7 +1,7 @@
 {
     "context": null,
     "currently_playing_type": "track",
-    "is_playing": true,
+    "is_playing": false,
     "item": {
         "album": {
             "album_type": "album",
@@ -247,6 +247,6 @@
         "type": "track",
         "uri": "spotify:track:3DZQ6mzUkAdHqZWzqxBKIK"
     },
-    "progress_ms": 166274,
-    "timestamp": 1550453177105
+    "progress_ms": 5314,
+    "timestamp": 1550458196340
 }
