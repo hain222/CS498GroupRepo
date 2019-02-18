@@ -1,3 +1,3 @@
 # CS498GroupRepo
 
-GitHub Repo for CS498 Spring 2019
+GitHub repository for CS 498 (Spring 2019)
