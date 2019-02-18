@@ -1,37 +1,20 @@
 {
-    "context": {
-        "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/3Te4rQ5TWxsUmvqqJE7GEE"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3Te4rQ5TWxsUmvqqJE7GEE",
-        "type": "playlist",
-        "uri": "spotify:user:1211791703:playlist:3Te4rQ5TWxsUmvqqJE7GEE"
-    },
+    "context": null,
     "currently_playing_type": "track",
-    "is_playing": false,
+    "is_playing": true,
     "item": {
         "album": {
-            "album_type": "single",
+            "album_type": "album",
             "artists": [
                 {
                     "external_urls": {
-                        "spotify": "https://open.spotify.com/artist/2cWZOOzeOm4WmBJRnD5R7I"
+                        "spotify": "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
                     },
-                    "href": "https://api.spotify.com/v1/artists/2cWZOOzeOm4WmBJRnD5R7I",
-                    "id": "2cWZOOzeOm4WmBJRnD5R7I",
-                    "name": "Normani",
+                    "href": "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+                    "id": "5pKCCKE2ajJHZ9KAiaK11H",
+                    "name": "Rihanna",
                     "type": "artist",
-                    "uri": "spotify:artist:2cWZOOzeOm4WmBJRnD5R7I"
-                },
-                {
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/artist/4IVAbR2w4JJNJDDRFP3E83"
-                    },
-                    "href": "https://api.spotify.com/v1/artists/4IVAbR2w4JJNJDDRFP3E83",
-                    "id": "4IVAbR2w4JJNJDDRFP3E83",
-                    "name": "6LACK",
-                    "type": "artist",
-                    "uri": "spotify:artist:4IVAbR2w4JJNJDDRFP3E83"
+                    "uri": "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
                 }
             ],
             "available_markets": [
@@ -115,54 +98,54 @@
                 "ZA"
             ],
             "external_urls": {
-                "spotify": "https://open.spotify.com/album/0vwWltI5IYadfWBU1A1gou"
+                "spotify": "https://open.spotify.com/album/4eddbruVtOqw8khwxSH6H2"
             },
-            "href": "https://api.spotify.com/v1/albums/0vwWltI5IYadfWBU1A1gou",
-            "id": "0vwWltI5IYadfWBU1A1gou",
+            "href": "https://api.spotify.com/v1/albums/4eddbruVtOqw8khwxSH6H2",
+            "id": "4eddbruVtOqw8khwxSH6H2",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/d48571f30d152b0939dffcb3a7ee0077f66b4d56",
+                    "url": "https://i.scdn.co/image/31ed5458991f5d4da0219c59fa884df1071fab9c",
                     "width": 640
                 },
                 {
                     "height": 300,
-                    "url": "https://i.scdn.co/image/3a9d500bb8b051ff3dabd836c55aa85c3f4817ee",
+                    "url": "https://i.scdn.co/image/9f3237eda6049ac5b14eb1ff0ab8470b2325fec2",
                     "width": 300
                 },
                 {
                     "height": 64,
-                    "url": "https://i.scdn.co/image/94d856fcd03b7eeb79ad14262a922d63361b10a3",
+                    "url": "https://i.scdn.co/image/ed7b6d633310574f4e0cfb7315260ab469628284",
                     "width": 64
                 }
             ],
-            "name": "Waves (feat. 6LACK)",
-            "release_date": "2018-11-15",
+            "name": "Unapologetic (Deluxe)",
+            "release_date": "2012-12-11",
             "release_date_precision": "day",
-            "total_tracks": 1,
+            "total_tracks": 17,
             "type": "album",
-            "uri": "spotify:album:0vwWltI5IYadfWBU1A1gou"
+            "uri": "spotify:album:4eddbruVtOqw8khwxSH6H2"
         },
         "artists": [
             {
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/2cWZOOzeOm4WmBJRnD5R7I"
+                    "spotify": "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
                 },
-                "href": "https://api.spotify.com/v1/artists/2cWZOOzeOm4WmBJRnD5R7I",
-                "id": "2cWZOOzeOm4WmBJRnD5R7I",
-                "name": "Normani",
+                "href": "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+                "id": "5pKCCKE2ajJHZ9KAiaK11H",
+                "name": "Rihanna",
                 "type": "artist",
-                "uri": "spotify:artist:2cWZOOzeOm4WmBJRnD5R7I"
+                "uri": "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
             },
             {
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/4IVAbR2w4JJNJDDRFP3E83"
+                    "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
                 },
-                "href": "https://api.spotify.com/v1/artists/4IVAbR2w4JJNJDDRFP3E83",
-                "id": "4IVAbR2w4JJNJDDRFP3E83",
-                "name": "6LACK",
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
                 "type": "artist",
-                "uri": "spotify:artist:4IVAbR2w4JJNJDDRFP3E83"
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
             }
         ],
         "available_markets": [
@@ -246,24 +229,24 @@
             "ZA"
         ],
         "disc_number": 1,
-        "duration_ms": 215670,
+        "duration_ms": 256320,
         "explicit": true,
         "external_ids": {
-            "isrc": "USRC11803647"
+            "isrc": "USUM71214740"
         },
         "external_urls": {
-            "spotify": "https://open.spotify.com/track/2qHk6Nz5glNQrjW8Rhd5kv"
+            "spotify": "https://open.spotify.com/track/3DZQ6mzUkAdHqZWzqxBKIK"
         },
-        "href": "https://api.spotify.com/v1/tracks/2qHk6Nz5glNQrjW8Rhd5kv",
-        "id": "2qHk6Nz5glNQrjW8Rhd5kv",
+        "href": "https://api.spotify.com/v1/tracks/3DZQ6mzUkAdHqZWzqxBKIK",
+        "id": "3DZQ6mzUkAdHqZWzqxBKIK",
         "is_local": false,
-        "name": "Waves (feat. 6LACK)",
-        "popularity": 73,
-        "preview_url": "https://p.scdn.co/mp3-preview/5547fc66dd1424a89baa2d60840e6bd5976eb376?cid=f898fc206f4145a3b02311c7820f9895",
-        "track_number": 1,
+        "name": "Loveeeeeee Song",
+        "popularity": 59,
+        "preview_url": null,
+        "track_number": 5,
         "type": "track",
-        "uri": "spotify:track:2qHk6Nz5glNQrjW8Rhd5kv"
+        "uri": "spotify:track:3DZQ6mzUkAdHqZWzqxBKIK"
     },
-    "progress_ms": 111886,
-    "timestamp": 1550444030513
+    "progress_ms": 166274,
+    "timestamp": 1550453177105
 }
