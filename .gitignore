@@ -1,6 +1,4 @@
-# ignore notes
-notes.txt
-
+.*.swp
 *.DS_Store
 *.ipynb_checkpoints
 *.cache*
