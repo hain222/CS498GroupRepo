@@ -30,12 +30,8 @@ CREATE TABLE Artist (
 CREATE TABLE Album (
 	albumId VARCHAR(22) NOT NULL PRIMARY KEY,
 	albumImg VARCHAR(128),
-	name VARCHAR(64) NOT NULL,
-<<<<<<< HEAD
-	type VARCHAR(32) NOT NULL,
-=======
-	albumType VARCHAR(15), -- types include: single, album, or compilation
->>>>>>> 82bebcee8542d5eae96cd1b4a57eb2e7cf073cee
+	albumName VARCHAR(64) NOT NULL,
+	albumType VARCHAR(15) NOT NLL, -- types include: single, album, or compilation
 	relDate VARCHAR(32),
 	numTracks INT
 );
@@ -64,20 +60,6 @@ CREATE TABLE AlbumArtist (
 	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
 );
 
-<<<<<<< HEAD
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/songs.dat" INTO TABLE Song 
-	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/albums.dat" INTO TABLE Album 
-	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/artists.dat" INTO TABLE Artist 
-	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/song-album.dat" INTO TABLE SongAlbum 
-	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/song-artist.dat" INTO TABLE SongArtist 
-	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/album-artist.dat" INTO TABLE AlbumArtist
-	FIELDS TERMINATED BY '|';
-=======
 -- loading data
 
 LOAD DATA LOCAL
@@ -109,4 +91,3 @@ LOAD DATA LOCAL
 INFILE "/home/jnge223/CS498GroupRepo/data/dat/album-artist.dat"
 INTO TABLE AlbumArtist
 FIELDS TERMINATED BY '|';
->>>>>>> 82bebcee8542d5eae96cd1b4a57eb2e7cf073cee
