@@ -28,6 +28,7 @@ CREATE TABLE Album (
 	albumId VARCHAR(22) NOT NULL PRIMARY KEY,
 	albumImg VARCHAR(128),
 	name VARCHAR(64) NOT NULL,
+	type VARCHAR(32) NOT NULL,
 	relDate VARCHAR(32),
 	numTracks INT
 );
@@ -56,15 +57,15 @@ CREATE TABLE AlbumArtist (
 	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
 );
 
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/songs.dat" INTO TABLE Song 
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/songs.dat" INTO TABLE Song 
 	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/albums.dat" INTO TABLE Album 
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/albums.dat" INTO TABLE Album 
 	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/artists.dat" INTO TABLE Artist 
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/artists.dat" INTO TABLE Artist 
 	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/song-album.dat" INTO TABLE SongAlbum 
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/song-album.dat" INTO TABLE SongAlbum 
 	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/song-artist.dat" INTO TABLE SongArtist 
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/song-artist.dat" INTO TABLE SongArtist 
 	FIELDS TERMINATED BY '|';
-LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/jupyter/album-artist.dat" INTO TABLE AlbumArtist
+LOAD DATA LOCAL INFILE "/home/hain222/cs498/proj/CS498GroupRepo/data/dat/album-artist.dat" INTO TABLE AlbumArtist
 	FIELDS TERMINATED BY '|';
