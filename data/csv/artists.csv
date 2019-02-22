@@ -1,48 +1,48 @@
-artist_id,artist_name
-66CXWjxzNUsdJxJ2JdwvnR,Ariana Grande
-6l3HvQ5sa6mXTsMTB19rO5,J. Cole
-246dkjvS1zLTtiykXe5h60,Post Malone
-1zNqQNIdeOUZHb8zbZRFMX,Swae Lee
-4MCBfE4596Uoi2O4DtmEMz,Juice WRLD
-1cNDP5yjU5vjeR8qMf4grg,YNW Melly
-20sxb77xiYeusSH8cVdatc,Meek Mill
-3TVXtAsR1Inumwj472S9r4,Drake
-1URnnhqYAYcrqrcwql10ft,21 Savage
-3Fl1V19tmjt57oBdxXKAjJ,Blueface
-6LuN9FCkKOj5PcnpouEgny,Khalid
-6nS5roXSAGhTGr34W6n7Et,Disclosure
-6qqNVTkY8uBg9cP3Jd7DAH,Billie Eilish
-5f7VJjfbwm532GiveGC0ZK,Lil Baby
-2hlmm7s2ICUX0LVIhVFlZQ,Gunna
-0Y5tJX1MQlPlqiwlOH1tJY,Travis Scott
-0YinUQ50QDB7ZxSCLyQ40k,Mustard
-6oMuImdp5ZcFhWP0ESe6mG,Migos
-26VFTg2z8YR0cCuwLzESi2,Halsey
-4kYSro6naA4h99UJvo89HB,Cardi B
-0du5cEVh5yTK9QJze8zA0C,Bruno Mars
-31W5EY0aAly4Qieq6OFu6I,A Boogie Wit da Hoodie
-46SHBwWsqBkxI7EeeBEQG7,Kodak Black
-4DdkRBBYG6Yk9Ka8tdJ9BW,Offset
-7gZfnEnfiaHzxARJ2LeXrf,6ix9ine
-64KEffDW9EtZ1y2vBYgq8T,Marshmello
-7EQ0qTo7fWT7DPxmxtSYEc,Bastille
-5JZ7CnR6gTvEMKX4g70Amv,Lauv
-3WGpXCj9YhhfX11TToZcXP,Troye Sivan
-2RDOrhPqAM4jzTRCEb19qX,Sheck Wes
-2wY79sveU1sp5g7SokKOiI,Sam Smith
-2cWZOOzeOm4WmBJRnD5R7I,Normani
-2HUwZ0kumzCSlhFcjFZfpp,Flipp Dinero
-13y7CgLHjMVRMDqxdx0Xdo,Gucci Mane
-5CiGnKThu5ctn9pBxv7DGa,benny blanco
-15UsOTVnJzReFVN1VCnxy4,XXXTENTACION
-1pPmIToKXyGdsCF6LmqLmI,Rich The Kid
-0cGUm45nv7Z6M6qdXYQGTX,Kehlani
-7c0XG5cIJTrrAgEC3ULPiq,Ty Dolla $ign
-0iEtIxbK0KxaSlF7G42ZOp,Metro Boomin
-6Ad91Jof8Niiw0lGLLi3NW,YUNGBLUD
-4exLIFE8sISLr28sqG1qNX,Travis Barker
-5LHRHt1k9lMyONurDHEdrp,Tyga
-1HY2Jd0NmPuamShAr6KMms,Lady Gaga
-4VIvfOurcf0vuLRxLkGnIG,Bradley Cooper
-69GGBxA162lTqCwzJG5jLp,The Chainsmokers
-5Rl15oVamLq7FbSb0NNBNy,5 Seconds of Summer
+,artist_id,artist_name
+0,66CXWjxzNUsdJxJ2JdwvnR,Ariana Grande
+2,6l3HvQ5sa6mXTsMTB19rO5,J. Cole
+3,246dkjvS1zLTtiykXe5h60,Post Malone
+5,1zNqQNIdeOUZHb8zbZRFMX,Swae Lee
+6,4MCBfE4596Uoi2O4DtmEMz,Juice WRLD
+7,1cNDP5yjU5vjeR8qMf4grg,YNW Melly
+8,20sxb77xiYeusSH8cVdatc,Meek Mill
+9,3TVXtAsR1Inumwj472S9r4,Drake
+10,1URnnhqYAYcrqrcwql10ft,21 Savage
+11,3Fl1V19tmjt57oBdxXKAjJ,Blueface
+14,6LuN9FCkKOj5PcnpouEgny,Khalid
+15,6nS5roXSAGhTGr34W6n7Et,Disclosure
+16,6qqNVTkY8uBg9cP3Jd7DAH,Billie Eilish
+18,5f7VJjfbwm532GiveGC0ZK,Lil Baby
+19,2hlmm7s2ICUX0LVIhVFlZQ,Gunna
+21,0Y5tJX1MQlPlqiwlOH1tJY,Travis Scott
+22,0YinUQ50QDB7ZxSCLyQ40k,Mustard
+23,6oMuImdp5ZcFhWP0ESe6mG,Migos
+24,26VFTg2z8YR0cCuwLzESi2,Halsey
+25,4kYSro6naA4h99UJvo89HB,Cardi B
+26,0du5cEVh5yTK9QJze8zA0C,Bruno Mars
+27,31W5EY0aAly4Qieq6OFu6I,A Boogie Wit da Hoodie
+29,46SHBwWsqBkxI7EeeBEQG7,Kodak Black
+30,4DdkRBBYG6Yk9Ka8tdJ9BW,Offset
+33,7gZfnEnfiaHzxARJ2LeXrf,6ix9ine
+34,64KEffDW9EtZ1y2vBYgq8T,Marshmello
+35,7EQ0qTo7fWT7DPxmxtSYEc,Bastille
+38,5JZ7CnR6gTvEMKX4g70Amv,Lauv
+39,3WGpXCj9YhhfX11TToZcXP,Troye Sivan
+40,2RDOrhPqAM4jzTRCEb19qX,Sheck Wes
+43,2wY79sveU1sp5g7SokKOiI,Sam Smith
+44,2cWZOOzeOm4WmBJRnD5R7I,Normani
+46,2HUwZ0kumzCSlhFcjFZfpp,Flipp Dinero
+50,13y7CgLHjMVRMDqxdx0Xdo,Gucci Mane
+53,5CiGnKThu5ctn9pBxv7DGa,benny blanco
+57,15UsOTVnJzReFVN1VCnxy4,XXXTENTACION
+59,1pPmIToKXyGdsCF6LmqLmI,Rich The Kid
+60,0cGUm45nv7Z6M6qdXYQGTX,Kehlani
+61,7c0XG5cIJTrrAgEC3ULPiq,Ty Dolla $ign
+62,0iEtIxbK0KxaSlF7G42ZOp,Metro Boomin
+64,6Ad91Jof8Niiw0lGLLi3NW,YUNGBLUD
+66,4exLIFE8sISLr28sqG1qNX,Travis Barker
+68,5LHRHt1k9lMyONurDHEdrp,Tyga
+70,1HY2Jd0NmPuamShAr6KMms,Lady Gaga
+71,4VIvfOurcf0vuLRxLkGnIG,Bradley Cooper
+72,69GGBxA162lTqCwzJG5jLp,The Chainsmokers
+73,5Rl15oVamLq7FbSb0NNBNy,5 Seconds of Summer
