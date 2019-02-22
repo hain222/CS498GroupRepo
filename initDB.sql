@@ -31,7 +31,7 @@ CREATE TABLE Album (
 	albumId VARCHAR(22) NOT NULL PRIMARY KEY,
 	albumImg VARCHAR(128),
 	albumName VARCHAR(64) NOT NULL,
-	albumType VARCHAR(15) NOT NLL, -- types include: single, album, or compilation
+	albumType VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
 	relDate VARCHAR(32),
 	numTracks INT
 );
