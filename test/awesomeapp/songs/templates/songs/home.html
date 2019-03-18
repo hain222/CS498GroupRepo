@@ -1,0 +1,8 @@
+{% extends 'songs/index.html' %}
+
+{% block content %}
+  {% for song in songs %}
+    {{song.name}}
+    <br>
+  {% endfor %}
+{% endblock %}
