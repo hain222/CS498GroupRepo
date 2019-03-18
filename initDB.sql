@@ -40,24 +40,24 @@ CREATE TABLE SongAlbum (
 	albumId VARCHAR(22) NOT NULL,
 	songId VARCHAR(22) NOT NULL,
 	PRIMARY KEY (songId, albumId),
-	FOREIGN KEY(songId) REFERENCES Song(songId),
-	FOREIGN KEY(albumId) REFERENCES Album(albumId)
+	FOREIGN KEY(songId) REFERENCES Song(songId) ON DELETE CASCADE,
+	FOREIGN KEY(albumId) REFERENCES Album(albumId) ON DELETE CASCADE
 );
 
 CREATE TABLE SongArtist (
 	artistId VARCHAR(22) NOT NULL,
 	songId VARCHAR(22) NOT NULL,
 	PRIMARY KEY (songId, artistId),
-	FOREIGN KEY(songId) REFERENCES Song(songId),
-	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
+	FOREIGN KEY(songId) REFERENCES Song(songId) ON DELETE CASCADE,
+	FOREIGN KEY(artistId) REFERENCES Artist(artistId) ON DELETE CASCADE
 );
 
 CREATE TABLE AlbumArtist (
 	albumId VARCHAR(22) NOT NULL,
 	artistId VARCHAR(22) NOT NULL,
 	PRIMARY KEY (albumId, artistId),
-	FOREIGN KEY(albumId) REFERENCES Album(albumId),
-	FOREIGN KEY(artistId) REFERENCES Artist(artistId)
+	FOREIGN KEY(albumId) REFERENCES Album(albumId) ON DELETE CASCADE,
+	FOREIGN KEY(artistId) REFERENCES Artist(artistId) ON DELETE CASCADE
 );
 
 -- loading data
