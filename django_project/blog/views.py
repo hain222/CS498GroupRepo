@@ -1,14 +1,15 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Song
 
 
 def home(request):
+	songs = Song.objects.all()
+
 	context = {
-		'posts': Post.objects.all()
-		
+		'songs': songs
+
 	}
 	return render(request, 'blog/home.html', context)
 
 def about(request):
 	return render(request, 'blog/about.html', {'title': 'About'})
-
