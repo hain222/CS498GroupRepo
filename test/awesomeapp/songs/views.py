@@ -3,7 +3,6 @@ from .models import Song
 
 # Create your views here.
 
-
 def home(request):
     songs = Song.objects.all()
 

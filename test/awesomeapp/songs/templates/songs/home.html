@@ -1,6 +1,8 @@
-<h1>hi</h1>
+{% extends 'songs/index.html' %}
 
-{% for song in songs %}
-{{song.name}}
-<br>
-{% endfor %}
+{% block content %}
+  {% for song in songs %}
+    {{song.name}}
+    <br>
+  {% endfor %}
+{% endblock %}
