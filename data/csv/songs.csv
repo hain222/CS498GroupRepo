@@ -1,51 +1,51 @@
-,track_id,track_name
-0,6ocbgoVGwYJhOv1GgI9NsF,7 rings
-1,4kV4N9D1iKVxx1KLvtTpjS,"break up with your girlfriend, i'm bored"
-2,2JvzF1RMd7lE3KmFlsyZD8,MIDDLE CHILD
-3,6MWtB6iiXyIwun0YzU6DFP,Wow.
-4,3KkXRkHbMCARz0aVfEt68P,Sunflower - Spider-Man: Into the Spider-Verse
-5,44ShclXTOOnYtt5CnCDeGV,Robbery
-6,7eBqSVxrzQZtK2mmgRG6lC,Murder On My Mind
-7,2IRZnDFmlqMuOrYOLnZZyc,Going Bad (feat. Drake)
-8,2t8yVaLvJ0RenpXUIAC52d,a lot
-9,3oh6SCCeLuXhFpEyepla6G,Thotiana
-10,3e9HZxeyfWwjeyPAMmWSSQ,"thank u, next"
-11,4SPu0Ql902hTVXkBoNIYtq,NASA
-12,0rTV5WefWd1J3OwIheTzxM,Talk
-13,4NzMOnvSJVNKF7nw5NkXIP,bury a friend
-14,1TEL6MlSSVLSdhOSddidlJ,needy
-15,78QR3Wp35dqAhFEc2qAGjE,Drip Too Hard (Lil Baby & Gunna)
-16,7EQpvVujgytLVY8vKiDHAg,bad idea
-17,2xLMifQCjDGFmkHkpNLD9h,SICKO MODE
-18,63cd4JkwGgYJrbOizbfmsp,Pure Water (with Migos)
-19,5p7ujcrUXASCNwRaWNHR1C,Without Me
-20,0PG9fbaaHFHfre2gUVo7AN,Please Me
-21,3Ol2xnObFdKV9pmRD2t9x8,Look Back At It
-22,2hloaUoRonYssMuqLCBLTX,bloodline
-23,0FZ4Dmg8jJJAPJnvBIzD9z,ZEZE (feat. Travis Scott & Offset)
-24,1wJRveJZLSb1rjhnUHQiv6,Swervin (feat. 6ix9ine)
-25,2dpaYNEQHiRxtZbfNsse99,Happier
-26,3wFLWP0FcIqHK1wb1CPthQ,fake smile
-27,39LmTF9RgyakzSYX8txrow,imagine
-28,7COXchtUOMd6uIT6HvmRaI,i'm so tired...
-29,1xzBco0xcoJEDXktl7Jxrr,Mo Bamba
-30,2MJdgSby3DtSS7bUJx2cly,Red Room
-31,4lD7gHKF1e8Y9stQuVezZB,ghostin
-32,6Qs4SXO9dwPj5GKvVOv8Ki,Dancing With A Stranger (with Normani)
-33,285pBltuF7vW8TeWk8hdRR,Lucid Dreams
-34,14mHfNsSHN0FbLftyjrV9g,Leave Me Alone
-35,5wujBwqG7INdStqGd4tRMX,Armed And Dangerous
-36,2GGMabyHXnJmjY6CXhhB2e,Money
-37,6zeeWid2sgw4lap2jV61PZ,Better
-38,2G1tXoGBaEMJ7FKGnkf6ud,Wake Up in the Sky
-39,7FGq80cy8juXBCD2nrqdWU,Eastside (with Halsey & Khalid)
-40,4T652DlATVHe0jdLKaN3Bw,in my head
-41,3ee8Jmje8o58CHK66QrVC2,SAD!
-42,7dt6x5M1jzdTEt8oCbisTK,Better Now
-43,79OEIr4J4FHV0O3KrhaXRb,Splashin
-44,7e4KQkp5ZR1gXCAalRjX6B,Nights Like This (feat. Ty Dolla $ign)
-45,1fewSx2d5KIZ04wsooEBOz,Space Cadet (feat. Gunna)
-46,4mGdjNMo0RonTlOEb7cYg4,11 Minutes (with Halsey feat. Travis Barker)
-47,0jAfdqv18goRTUxm3ilRjb,Startender (feat. Offset and Tyga)
-48,2VxeLyX666F8uXCJ0dZF8B,Shallow
-49,11cDEev79fPKi6uJCjUhu8,Who Do You Love (with 5 Seconds of Summer)
+,track_id,track_link,track_name
+0,2JvzF1RMd7lE3KmFlsyZD8,https://api.spotify.com/v1/tracks/2JvzF1RMd7lE3KmFlsyZD8,MIDDLE CHILD
+1,3KkXRkHbMCARz0aVfEt68P,https://api.spotify.com/v1/tracks/3KkXRkHbMCARz0aVfEt68P,Sunflower - Spider-Man: Into the Spider-Verse
+2,6ocbgoVGwYJhOv1GgI9NsF,https://api.spotify.com/v1/tracks/6ocbgoVGwYJhOv1GgI9NsF,7 rings
+3,4y3OI86AEP6PQoDE6olYhO,https://api.spotify.com/v1/tracks/4y3OI86AEP6PQoDE6olYhO,Sucker
+4,7eBqSVxrzQZtK2mmgRG6lC,https://api.spotify.com/v1/tracks/7eBqSVxrzQZtK2mmgRG6lC,Murder On My Mind
+5,6MWtB6iiXyIwun0YzU6DFP,https://api.spotify.com/v1/tracks/6MWtB6iiXyIwun0YzU6DFP,Wow.
+6,2IRZnDFmlqMuOrYOLnZZyc,https://api.spotify.com/v1/tracks/2IRZnDFmlqMuOrYOLnZZyc,Going Bad (feat. Drake)
+7,4kV4N9D1iKVxx1KLvtTpjS,https://api.spotify.com/v1/tracks/4kV4N9D1iKVxx1KLvtTpjS,"break up with your girlfriend, i'm bored"
+8,6Hj9jySrnFppAI0sEMCZpJ,https://api.spotify.com/v1/tracks/6Hj9jySrnFppAI0sEMCZpJ,Robbery
+9,3oh6SCCeLuXhFpEyepla6G,https://api.spotify.com/v1/tracks/3oh6SCCeLuXhFpEyepla6G,Thotiana
+10,1wJRveJZLSb1rjhnUHQiv6,https://api.spotify.com/v1/tracks/1wJRveJZLSb1rjhnUHQiv6,Swervin (feat. 6ix9ine)
+11,2t8yVaLvJ0RenpXUIAC52d,https://api.spotify.com/v1/tracks/2t8yVaLvJ0RenpXUIAC52d,a lot
+12,63cd4JkwGgYJrbOizbfmsp,https://api.spotify.com/v1/tracks/63cd4JkwGgYJrbOizbfmsp,Pure Water (with Migos)
+13,6vWEAOUSxohKxhp0K1BsxL,https://api.spotify.com/v1/tracks/6vWEAOUSxohKxhp0K1BsxL,Mixed Personalities (feat. Kanye West)
+14,78QR3Wp35dqAhFEc2qAGjE,https://api.spotify.com/v1/tracks/78QR3Wp35dqAhFEc2qAGjE,Drip Too Hard (Lil Baby & Gunna)
+15,2xLMifQCjDGFmkHkpNLD9h,https://api.spotify.com/v1/tracks/2xLMifQCjDGFmkHkpNLD9h,SICKO MODE
+16,4dTiQezDWmEOWcdCbWVWMp,https://api.spotify.com/v1/tracks/4dTiQezDWmEOWcdCbWVWMp,Numb Numb Juice
+17,5icOoE6VgqFKohjWWNp0Ac,https://api.spotify.com/v1/tracks/5icOoE6VgqFKohjWWNp0Ac,Here With Me
+18,3e9HZxeyfWwjeyPAMmWSSQ,https://api.spotify.com/v1/tracks/3e9HZxeyfWwjeyPAMmWSSQ,"thank u, next"
+19,6MjNilJCVKJq0LfFvo5jWJ,https://api.spotify.com/v1/tracks/6MjNilJCVKJq0LfFvo5jWJ,Fast
+20,0FZ4Dmg8jJJAPJnvBIzD9z,https://api.spotify.com/v1/tracks/0FZ4Dmg8jJJAPJnvBIzD9z,ZEZE (feat. Travis Scott & Offset)
+21,0rTV5WefWd1J3OwIheTzxM,https://api.spotify.com/v1/tracks/0rTV5WefWd1J3OwIheTzxM,Talk
+22,53CJANUxooaqGOtdsBTh7O,https://api.spotify.com/v1/tracks/53CJANUxooaqGOtdsBTh7O,Old Town Road
+23,2dpaYNEQHiRxtZbfNsse99,https://api.spotify.com/v1/tracks/2dpaYNEQHiRxtZbfNsse99,Happier
+24,5p7ujcrUXASCNwRaWNHR1C,https://api.spotify.com/v1/tracks/5p7ujcrUXASCNwRaWNHR1C,Without Me
+25,0PG9fbaaHFHfre2gUVo7AN,https://api.spotify.com/v1/tracks/0PG9fbaaHFHfre2gUVo7AN,Please Me
+26,3Ol2xnObFdKV9pmRD2t9x8,https://api.spotify.com/v1/tracks/3Ol2xnObFdKV9pmRD2t9x8,Look Back At It
+27,1xzBco0xcoJEDXktl7Jxrr,https://api.spotify.com/v1/tracks/1xzBco0xcoJEDXktl7Jxrr,Mo Bamba
+28,1DUSuNhF8P5vUGNPpQiZa5,https://api.spotify.com/v1/tracks/1DUSuNhF8P5vUGNPpQiZa5,My Bad
+29,285pBltuF7vW8TeWk8hdRR,https://api.spotify.com/v1/tracks/285pBltuF7vW8TeWk8hdRR,Lucid Dreams
+30,4txc3txsIt81diMzGhrVPS,https://api.spotify.com/v1/tracks/4txc3txsIt81diMzGhrVPS,wish you were gay
+31,2VxeLyX666F8uXCJ0dZF8B,https://api.spotify.com/v1/tracks/2VxeLyX666F8uXCJ0dZF8B,Shallow
+32,6Qs4SXO9dwPj5GKvVOv8Ki,https://api.spotify.com/v1/tracks/6Qs4SXO9dwPj5GKvVOv8Ki,Dancing With A Stranger (with Normani)
+33,4NzMOnvSJVNKF7nw5NkXIP,https://api.spotify.com/v1/tracks/4NzMOnvSJVNKF7nw5NkXIP,bury a friend
+34,13ZyrkCDmRz5xY3seuAWYk,https://api.spotify.com/v1/tracks/13ZyrkCDmRz5xY3seuAWYk,Hear Me Calling
+35,2GGMabyHXnJmjY6CXhhB2e,https://api.spotify.com/v1/tracks/2GGMabyHXnJmjY6CXhhB2e,Money
+36,4ZT9FnbFu1PaBfV3itxiqT,https://api.spotify.com/v1/tracks/4ZT9FnbFu1PaBfV3itxiqT,i
+37,2G1tXoGBaEMJ7FKGnkf6ud,https://api.spotify.com/v1/tracks/2G1tXoGBaEMJ7FKGnkf6ud,Wake Up in the Sky
+38,05t7JMip6JrLuSrMV5yYjX,https://api.spotify.com/v1/tracks/05t7JMip6JrLuSrMV5yYjX,Envy Me
+39,3ee8Jmje8o58CHK66QrVC2,https://api.spotify.com/v1/tracks/3ee8Jmje8o58CHK66QrVC2,SAD!
+40,6zeeWid2sgw4lap2jV61PZ,https://api.spotify.com/v1/tracks/6zeeWid2sgw4lap2jV61PZ,Better
+41,7dt6x5M1jzdTEt8oCbisTK,https://api.spotify.com/v1/tracks/7dt6x5M1jzdTEt8oCbisTK,Better Now
+42,7FGq80cy8juXBCD2nrqdWU,https://api.spotify.com/v1/tracks/7FGq80cy8juXBCD2nrqdWU,Eastside (with Halsey & Khalid)
+43,41MCdlvXOl62B7Kv86Bb1v,https://api.spotify.com/v1/tracks/41MCdlvXOl62B7Kv86Bb1v,Empty
+44,1ThmUihH9dF8EV08ku5AXN,https://api.spotify.com/v1/tracks/1ThmUihH9dF8EV08ku5AXN,Faucet Failure
+45,5w9c2J52mkdntKOmRLeM2m,https://api.spotify.com/v1/tracks/5w9c2J52mkdntKOmRLeM2m,Con Calma
+46,7COXchtUOMd6uIT6HvmRaI,https://api.spotify.com/v1/tracks/7COXchtUOMd6uIT6HvmRaI,i'm so tired...
+47,1WSGTYKLEpKfNQYYW5Oymt,https://api.spotify.com/v1/tracks/1WSGTYKLEpKfNQYYW5Oymt,"I Can’t Get Enough (benny blanco, Selena Gomez, J Balvin, Tainy)"
+48,79OEIr4J4FHV0O3KrhaXRb,https://api.spotify.com/v1/tracks/79OEIr4J4FHV0O3KrhaXRb,Splashin
+49,6eiztdXRkooWsBt2xToMWI,https://api.spotify.com/v1/tracks/6eiztdXRkooWsBt2xToMWI,Make Believe

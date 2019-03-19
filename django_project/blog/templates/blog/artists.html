@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div class="container">
+	<h1>Artists ({{ artists|length }})</h1>
+	<div class="row">
+		{% for artist in artists %}
+      <p>{{ artist.name }}</p>
+		{% endfor %}
+  </div>
+</div>
+{% endblock content %}
