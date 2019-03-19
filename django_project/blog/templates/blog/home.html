@@ -1,16 +1,45 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
+<div class="container">
 	{% for song in songs %}
-		<article class="media content-section">
-  			<div class="media-body">
-    			<div class="article-metadata">
-      				<a class="mr-2" href="#">{{ song.name }}</a>
-      				<small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
-    			</div>
-    			<!-- <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-    			<p class="article-content">{{ post.content }}</p> -->
-  			</div>
-		</article>
+		<div class="row">
+	    <div class="col s12 m6">
+	      <div class="card">
+	        <div class="card-image">
+						{% for key,value in songalbumdict.items %}
+							{% if song.songid == key %}
+								{% for album in albums %}
+									{% if value == album.albumid %}
+										<img src="{{album.albumimg}}">
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+						{% endfor %}
+	          <span class="card-title">{{ song.name }}</span>
+	        </div>
+	        <div class="card-content">
+	          <p>
+							{% for key, value in songartistdict.items %}
+								{% if song.songid == key %}
+									{% for v in value %}
+										{% for a in artists %}
+											{% if v == a.artistid %}
+												{{ a.name }}
+											{% endif %}
+										{% endfor %}
+										<br>
+									{% endfor %}
+								{% endif %}
+							{% endfor %}
+						</p>
+	        </div>
+	        <div class="card-action">
+	          <a href="#">Show on Spotify</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 	{% endfor %}
+</div>
 {% endblock content %}
