@@ -5,7 +5,33 @@
 	<h1>Albums ({{ albums|length }})</h1>
 	<div class="row">
 		{% for album in albums %}
-      <p>{{ album.albumname }}</p>
+			<h4>{{ album.albumname }}</h4>
+
+			<p>
+				Image: {{ album.albumimg }}
+				<br>
+				Type: {{ album.albumtype }}
+				<br>
+				Release Date: {{ album.reldate }}
+				<br>
+				Amount of tracks: {{ album.numtracks }}
+				<ul>
+					songs for album:
+					{% for key, value in songalbumdict.items %}
+						{% if album.albumid == key %}
+							{% for v in value %}
+								{% for song in songs %}
+									{% if v == song.songid %}
+										<li>&mdash; {{ song.name }}</li>
+									{% endif %}
+								{% endfor %}
+							{% endfor %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</p>
+
+			<hr>
 		{% endfor %}
   </div>
 </div>

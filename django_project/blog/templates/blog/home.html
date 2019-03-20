@@ -8,7 +8,7 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image">
-					{% for key,value in songalbumdict.items %}
+					{% for key, value in songalbumdict.items %}
 						{% if song.songid == key %}
 							{% for album in albums %}
 								{% if value == album.albumid %}
