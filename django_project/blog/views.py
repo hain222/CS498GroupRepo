@@ -42,18 +42,7 @@ def about(request):
 
 def albums(request):
 	albums = Album.objects.all()
-	songs = Song.objects.all()
 
-	songids = Song.objects.values('songid')
-
-	songalbumdict = dict()
-	for i in Songalbum.objects.filter(songid__in=songids).values('albumid', 'songid'):
-		if i['albumid'] in songalbumdict:
-			# append the new number to the existing array at this slot
-			songalbumdict[i['albumid']].append(i['songid'])
-		else:
-			# create a new array in this slot
-			songalbumdict[i['albumid']] = [i['songid']]
 
 	return render(
 		request,
@@ -61,8 +50,27 @@ def albums(request):
 		{
 			'title': 'Albums',
 			'albums': albums,
-			'songs': songs,
-			'songalbumdict': songalbumdict
+		}
+	)
+
+def album(request, albumid):
+	album = Album.objects.filter(albumid=albumid).first()
+
+	songids = Song.objects.values('songid')
+
+	songidlist=list()
+	for i in Songalbum.objects.filter(songid__in=songids,albumid=albumid).values('songid'):
+		songidlist.append(i['songid'])
+
+	songs = Song.objects.filter(songid__in=songidlist)
+
+	return render(
+		request,
+		'blog/album.html',
+		{
+			'title': 'album',
+			'album': album,
+			'songs': songs
 		}
 	)
 
@@ -74,6 +82,18 @@ def artists(request):
 		{
 			'title': 'Artists',
 			'artists': artists
+		}
+	)
+
+def artist(request, artistid):
+	artist = Artist.objects.filter(artistid=artistid).first()
+
+	return render(
+		request,
+		'blog/artist.html',
+		{
+			'title': 'Artists',
+			'artist': artist
 		}
 	)
 
@@ -106,3 +126,13 @@ def songs(request):
 	}
 
 	return render(request, 'blog/songs.html', context)
+
+def song(request, songid):
+	song = Song.objects.filter(songid=songid).first()
+
+	context = {
+		'title': 'song',
+		'song': song
+	}
+
+	return render(request, 'blog/song.html', context)

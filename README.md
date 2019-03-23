@@ -1,3 +1,7 @@
-# CS498GroupRepo
+# CS 498 Group Repo
 
 GitHub repository for CS498 (Spring 2019)
+
+Group 3
+
+Jordan George, Alex Hamlin, Harrison Inocencio, and Bryce Kushner

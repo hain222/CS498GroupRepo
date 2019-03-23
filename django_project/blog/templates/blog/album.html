@@ -1,0 +1,35 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>{{ album.albumname }}</h1>
+  <div class="row">
+    <p>
+      Image: {{ album.albumimg }}
+      <br>
+      Type: {{ album.albumtype }}
+      <br>
+      Release Date: {{ album.reldate }}
+      <br>
+      Amount of tracks: {{ album.numtracks }}
+    </p>
+    <table>
+      <h4>songs</h4>
+      <tr>
+        <th>id</th>
+        <th>title</th>
+      </tr>
+      {% for song in songs %}
+      <tr>
+        <td>{{ song.songid }}</td>
+        <td>
+          <a href="/songs/{{ song.songid }}">
+            {{ song.name }}
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>  
+  </div>
+</div>
+{% endblock content %}

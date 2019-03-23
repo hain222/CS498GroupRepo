@@ -5,7 +5,11 @@
 	<h1>Artists ({{ artists|length }})</h1>
 	<div class="row">
 		{% for artist in artists %}
-      <p>{{ artist.name }}</p>
+      <p>
+				<a href="{{ artist.artistid }}">
+					{{ artist.name }}
+				</a>
+			</p>
 		{% endfor %}
   </div>
 </div>
