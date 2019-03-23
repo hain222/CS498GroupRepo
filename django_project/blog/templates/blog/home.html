@@ -17,7 +17,11 @@
 							{% endfor %}
 						{% endif %}
 					{% endfor %}
-          <span class="card-title">{{ song.name }}</span>
+          <span class="card-title">
+						<a href="{{ song.songid }}">
+							{{ song.name }}
+						</a>
+					</span>
         </div>
         <div class="card-content">
           <p>
@@ -26,7 +30,9 @@
 								{% for v in value %}
 									{% for a in artists %}
 										{% if v == a.artistid %}
-											{{ a.name }}
+											<a href="/artists/{{ a.artistid }}">
+												{{ a.name }}
+											</a>
 										{% endif %}
 									{% endfor %}
 									<br>
