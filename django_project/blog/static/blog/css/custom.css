@@ -1,5 +1,11 @@
 body {
-  background-color: yellow;
+  background-color: white;
+}
+div h1 {
+  color: #0033A0;
+}
+nav {
+  background-color: #0033A0;
 }
 
 .card-content {
