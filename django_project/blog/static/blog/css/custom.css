@@ -1,3 +1,7 @@
 body {
   background-color: yellow;
 }
+
+.card-content {
+	height: 120px;
+}
