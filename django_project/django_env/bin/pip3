@@ -1,4 +1,4 @@
-#!/home/avha224/CS498/Django/django_project/django_env/bin/python3
+#!/Users/jordangeorge/Library/Mobile\ Documents/com~apple~CloudDocs/CS498GroupRepo/django_project/django_env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
