@@ -12,52 +12,53 @@ USE isdb;
 -- creating tables
 
 CREATE TABLE User (
-	userId INT PRIMARY KEY,
+	user_id INT PRIMARY KEY,
 	username VARCHAR(32) NOT NULL,
 	password VARCHAR(32) NOT NULL
 );
 
 CREATE TABLE Song (
-	songId VARCHAR(22) NOT NULL PRIMARY KEY,
-	name VARCHAR(64) NOT NULL
+	id VARCHAR(22) NOT NULL PRIMARY KEY,
+	name VARCHAR(64) NOT NULL,
+
 );
 
 CREATE TABLE Artist (
-	artistId VARCHAR(22) NOT NULL PRIMARY KEY,
+	id VARCHAR(22) NOT NULL PRIMARY KEY,
 	name VARCHAR(64) NOT NULL
 );
 
 CREATE TABLE Album (
-	albumId VARCHAR(22) NOT NULL PRIMARY KEY,
-	albumImg VARCHAR(128),
-	albumName VARCHAR(64) NOT NULL,
-	albumType VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
-	relDate VARCHAR(32),
-	numTracks INT
+	id VARCHAR(22) NOT NULL PRIMARY KEY,
+	image VARCHAR(128),
+	name VARCHAR(64) NOT NULL,
+	type VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
+	rel_date VARCHAR(32),
+	num_tracks INT
 );
 
 CREATE TABLE SongAlbum (
-	albumId VARCHAR(22) NOT NULL,
-	songId VARCHAR(22) NOT NULL,
-	PRIMARY KEY (songId, albumId),
-	FOREIGN KEY(songId) REFERENCES Song(songId) ON DELETE CASCADE,
-	FOREIGN KEY(albumId) REFERENCES Album(albumId) ON DELETE CASCADE
+	album_id VARCHAR(22) NOT NULL,
+	song_id VARCHAR(22) NOT NULL,
+	PRIMARY KEY (album_id, song_id),
+	FOREIGN KEY(album_id) REFERENCES Album(id) ON DELETE CASCADE,
+	FOREIGN KEY(song_id) REFERENCES Song(id) ON DELETE CASCADE
 );
 
 CREATE TABLE SongArtist (
-	artistId VARCHAR(22) NOT NULL,
-	songId VARCHAR(22) NOT NULL,
-	PRIMARY KEY (songId, artistId),
-	FOREIGN KEY(songId) REFERENCES Song(songId) ON DELETE CASCADE,
-	FOREIGN KEY(artistId) REFERENCES Artist(artistId) ON DELETE CASCADE
+	artist_id VARCHAR(22) NOT NULL,
+	song_id VARCHAR(22) NOT NULL,
+	PRIMARY KEY (artist_id, song_id),
+	FOREIGN KEY(artist_id) REFERENCES Artist(id) ON DELETE CASCADE,
+	FOREIGN KEY(song_id) REFERENCES Song(songId) ON DELETE CASCADE
 );
 
 CREATE TABLE AlbumArtist (
-	albumId VARCHAR(22) NOT NULL,
-	artistId VARCHAR(22) NOT NULL,
-	PRIMARY KEY (albumId, artistId),
-	FOREIGN KEY(albumId) REFERENCES Album(albumId) ON DELETE CASCADE,
-	FOREIGN KEY(artistId) REFERENCES Artist(artistId) ON DELETE CASCADE
+	album_id VARCHAR(22) NOT NULL,
+	artist_id VARCHAR(22) NOT NULL,
+	PRIMARY KEY (album_id, artist_id),
+	FOREIGN KEY(album_id) REFERENCES Album(id) ON DELETE CASCADE,
+	FOREIGN KEY(artist_id) REFERENCES Artist(id) ON DELETE CASCADE
 );
 
 -- loading data
