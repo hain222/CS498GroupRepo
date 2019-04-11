@@ -9,12 +9,12 @@ from django.db import models
 
 
 class Album(models.Model):
-    albumid = models.CharField(db_column='albumId', primary_key=True, max_length=22)  # Field name made lowercase.
-    albumimg = models.CharField(db_column='albumImg', max_length=128, blank=True, null=True)  # Field name made lowercase.
-    albumname = models.CharField(db_column='albumName', max_length=64)  # Field name made lowercase.
-    albumtype = models.CharField(db_column='albumType', max_length=15)  # Field name made lowercase.
-    reldate = models.CharField(db_column='relDate', max_length=32, blank=True, null=True)  # Field name made lowercase.
-    numtracks = models.IntegerField(db_column='numTracks', blank=True, null=True)  # Field name made lowercase.
+    id = models.CharField(primary_key=True, max_length=22)
+    image = models.CharField(max_length=128, blank=True, null=True)
+    name = models.CharField(max_length=64)
+    type = models.CharField(max_length=15)
+    rel_date = models.CharField(max_length=32, blank=True, null=True)
+    num_tracks = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -22,17 +22,17 @@ class Album(models.Model):
 
 
 class Albumartist(models.Model):
-    albumid = models.ForeignKey(Album, models.DO_NOTHING, db_column='albumId', primary_key=True)  # Field name made lowercase.
-    artistid = models.ForeignKey('Artist', models.DO_NOTHING, db_column='artistId')  # Field name made lowercase.
+    album = models.ForeignKey(Album, models.DO_NOTHING, primary_key=True)
+    artist = models.ForeignKey('Artist', models.DO_NOTHING)
 
     class Meta:
         managed = False
         db_table = 'AlbumArtist'
-        unique_together = (('albumid', 'artistid'),)
+        unique_together = (('album', 'artist'),)
 
 
 class Artist(models.Model):
-    artistid = models.CharField(db_column='artistId', primary_key=True, max_length=22)  # Field name made lowercase.
+    id = models.CharField(primary_key=True, max_length=22)
     name = models.CharField(max_length=64)
 
     class Meta:
@@ -41,7 +41,9 @@ class Artist(models.Model):
 
 
 class Song(models.Model):
-    songid = models.CharField(db_column='songId', primary_key=True, max_length=22)  # Field name made lowercase.
+    duration = models.IntegerField()
+    id = models.CharField(primary_key=True, max_length=22)
+    link = models.CharField(max_length=100)
     name = models.CharField(max_length=64)
 
     class Meta:
@@ -50,27 +52,27 @@ class Song(models.Model):
 
 
 class Songalbum(models.Model):
-    albumid = models.ForeignKey(Album, models.DO_NOTHING, db_column='albumId')  # Field name made lowercase.
-    songid = models.ForeignKey(Song, models.DO_NOTHING, db_column='songId', primary_key=True)  # Field name made lowercase.
+    album = models.ForeignKey(Album, models.DO_NOTHING, primary_key=True)
+    song = models.ForeignKey(Song, models.DO_NOTHING)
 
     class Meta:
         managed = False
         db_table = 'SongAlbum'
-        unique_together = (('songid', 'albumid'),)
+        unique_together = (('album', 'song'),)
 
 
 class Songartist(models.Model):
-    artistid = models.ForeignKey(Artist, models.DO_NOTHING, db_column='artistId')  # Field name made lowercase.
-    songid = models.ForeignKey(Song, models.DO_NOTHING, db_column='songId', primary_key=True)  # Field name made lowercase.
+    song = models.ForeignKey(Song, models.DO_NOTHING)
+    artist = models.ForeignKey(Artist, models.DO_NOTHING, primary_key=True)
 
     class Meta:
         managed = False
         db_table = 'SongArtist'
-        unique_together = (('songid', 'artistid'),)
+        unique_together = (('artist', 'song'),)
 
 
 class User(models.Model):
-    userid = models.IntegerField(db_column='userId', primary_key=True)  # Field name made lowercase.
+    id = models.IntegerField(primary_key=True)
     username = models.CharField(max_length=32)
     password = models.CharField(max_length=32)
 

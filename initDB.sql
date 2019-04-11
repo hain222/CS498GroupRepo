@@ -21,20 +21,23 @@ CREATE TABLE User (
 CREATE TABLE Song (
 	duration INT NOT NULL,
 	id VARCHAR(22) NOT NULL,
-	link VARCHAR(100) NOT NULL,
+	link VARCHAR(53) NOT NULL,
 	name VARCHAR(64) NOT NULL,
 	PRIMARY KEY (id)
 );
 
 CREATE TABLE Artist (
 	id VARCHAR(22) NOT NULL,
+	image VARCHAR(64),
+	link VARCHAR(53) NOT NULL,
 	name VARCHAR(64) NOT NULL,
 	PRIMARY KEY (id)
 );
 
 CREATE TABLE Album (
 	id VARCHAR(22) NOT NULL,
-	image VARCHAR(128),
+	image VARCHAR(64),
+	link VARCHAR(53) NOT NULL,
 	name VARCHAR(64) NOT NULL,
 	type VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
 	rel_date VARCHAR(32),

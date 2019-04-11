@@ -9,16 +9,16 @@
       <div class="card">
         <div class="card-image">
 					{% for key, value in songalbumdict.items %}
-						{% if song.songid == key %}
+						{% if song.id == key %}
 							{% for album in albums %}
-								{% if value == album.albumid %}
-									<img src="{{ album.albumimg }}">
+								{% if value == album.id %}
+									<img src="{{ album.image }}">
 								{% endif %}
 							{% endfor %}
 						{% endif %}
 					{% endfor %}
           <span class="card-title">
-						<a href="{{ song.songid }}">
+						<a href="{{ song.id }}">
 							{{ song.name }}
 						</a>
 					</span>
@@ -26,11 +26,11 @@
         <div class="card-content">
           <p>
 						{% for key, value in songartistdict.items %}
-							{% if song.songid == key %}
+							{% if song.id == key %}
 								{% for v in value %}
 									{% for a in artists %}
-										{% if v == a.artistid %}
-											<a href="/artists/{{ a.artistid }}">
+										{% if v == a.id %}
+											<a href="/artists/{{ a.id }}">
 												{{ a.name }}
 											</a>
 										{% endif %}

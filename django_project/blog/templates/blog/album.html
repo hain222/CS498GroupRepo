@@ -5,13 +5,13 @@
   <h1>{{ album.albumname }}</h1>
   <div class="row">
     <p>
-      Image: {{ album.albumimg }}
+      Image: {{ album.image }}
       <br>
-      Type: {{ album.albumtype }}
+      Type: {{ album.type }}
       <br>
-      Release Date: {{ album.reldate }}
+      Release Date: {{ album.rel_date }}
       <br>
-      Amount of tracks: {{ album.numtracks }}
+      Amount of tracks: {{ album.num_tracks }}
     </p>
     <table>
       <h4>songs</h4>
@@ -21,15 +21,15 @@
       </tr>
       {% for song in songs %}
       <tr>
-        <td>{{ song.songid }}</td>
+        <td>{{ song.id }}</td>
         <td>
-          <a href="/songs/{{ song.songid }}">
+          <a href="/songs/{{ song.id }}">
             {{ song.name }}
           </a>
         </td>
       </tr>
       {% endfor %}
-    </table>  
+    </table>
   </div>
 </div>
 {% endblock content %}
