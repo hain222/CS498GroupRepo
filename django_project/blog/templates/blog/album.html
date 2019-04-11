@@ -2,17 +2,18 @@
 
 {% block content %}
 <div class="container">
-  <h1>{{ album.albumname }}</h1>
+  <h1>{{ album.name }}</h1>
   <div class="row">
     <p>
-      Image: {{ album.image }}
-      <br>
       Type: {{ album.type }}
       <br>
       Release Date: {{ album.rel_date }}
       <br>
       Amount of tracks: {{ album.num_tracks }}
+      <br>
+      <a href="{{ album.link }}">album spotify link</a>
     </p>
+    <img src="{{ album.image }}" alt="">
     <table>
       <h4>songs</h4>
       <tr>

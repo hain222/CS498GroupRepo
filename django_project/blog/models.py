@@ -10,7 +10,8 @@ from django.db import models
 
 class Album(models.Model):
     id = models.CharField(primary_key=True, max_length=22)
-    image = models.CharField(max_length=128, blank=True, null=True)
+    image = models.CharField(max_length=64, blank=True, null=True)
+    link = models.CharField(max_length=53)
     name = models.CharField(max_length=64)
     type = models.CharField(max_length=15)
     rel_date = models.CharField(max_length=32, blank=True, null=True)
@@ -33,6 +34,8 @@ class Albumartist(models.Model):
 
 class Artist(models.Model):
     id = models.CharField(primary_key=True, max_length=22)
+    image = models.CharField(max_length=64, blank=True, null=True)
+    link = models.CharField(max_length=53)
     name = models.CharField(max_length=64)
 
     class Meta:
@@ -43,7 +46,7 @@ class Artist(models.Model):
 class Song(models.Model):
     duration = models.IntegerField()
     id = models.CharField(primary_key=True, max_length=22)
-    link = models.CharField(max_length=100)
+    link = models.CharField(max_length=53)
     name = models.CharField(max_length=64)
 
     class Meta:

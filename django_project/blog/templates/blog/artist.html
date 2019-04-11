@@ -3,6 +3,11 @@
 {% block content %}
 <div class="container">
 	<h1>{{ artist.name }}</h1>
-  id: {{ artist.id }}
+	<p>
+		id: {{ artist.id }}
+		<br>
+		<a href="{{ artist.link }}">artist spotify link</a>
+	</p>
+	<img src="{{ artist.image }}" alt="">
 </div>
 {% endblock content %}

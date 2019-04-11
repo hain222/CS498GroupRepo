@@ -130,9 +130,27 @@ def songs(request):
 def song(request, songid):
 	song = Song.objects.filter(id=songid).first()
 
+	duration=song.duration
+	# print(duration)
+	s=duration/1000
+	m,s=divmod(s,60)
+	h,m=divmod(m,60)
+	d,h=divmod(h,24)
+	s = '0' + str(int(s)) if int(s) < 10 else str(int(s))
+	m = '0' + str(int(m)) if int(m) < 10 else str(int(m))
+	h = '0' + str(int(h)) if int(h) < 10 else str(int(h))
+	d = '0' + str(int(d)) if int(d) < 10 else str(int(d))
+	time = '{}:{}:{}:{}'.format(d,h,m,s)
+	if d=='00' and h=='00':
+		time=time[6:]
+	elif d=='00':
+		time=time[3:]
+	# print(time)
+
 	context = {
 		'title': 'song',
-		'song': song
+		'song': song,
+		'time': time
 	}
 
 	return render(request, 'blog/song.html', context)

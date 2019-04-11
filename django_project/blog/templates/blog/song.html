@@ -4,9 +4,13 @@
 <div class="container">
   <div class="row">
     <h4>{{ song.name }}</h4>
-    <p>song's id: {{ song.id }}</p>
-    <p>song's duration: {{ song.duration }}</p>
-    <p>song's spotify link: {{ song.link }}</p>
+    <p>
+      song's id: {{ song.id }}
+      <br>
+      song's duration: {{ time }}
+      <br>
+      <a href="{{ song.link }}">song's spotify link</a>
+    </p>
   </div>
 </div>
 {% endblock content %}
