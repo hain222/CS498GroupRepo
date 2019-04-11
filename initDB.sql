@@ -51,7 +51,7 @@ CREATE TABLE SongArtist (
 	song_id VARCHAR(22) NOT NULL,
 	PRIMARY KEY (artist_id, song_id),
 	FOREIGN KEY(artist_id) REFERENCES Artist(id) ON DELETE CASCADE,
-	FOREIGN KEY(song_id) REFERENCES Song(songId) ON DELETE CASCADE
+	FOREIGN KEY(song_id) REFERENCES Song(id) ON DELETE CASCADE
 );
 
 CREATE TABLE AlbumArtist (
