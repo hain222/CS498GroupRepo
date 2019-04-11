@@ -12,30 +12,34 @@ USE isdb;
 -- creating tables
 
 CREATE TABLE User (
-	user_id INT PRIMARY KEY,
+	id INT,
 	username VARCHAR(32) NOT NULL,
-	password VARCHAR(32) NOT NULL
+	password VARCHAR(32) NOT NULL,
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE Song (
-	id VARCHAR(22) NOT NULL PRIMARY KEY,
-	name VARCHAR(64) NOT NULL,
+	duration INT NOT NULL,
+	id VARCHAR(22) NOT NULL,
 	link VARCHAR(100) NOT NULL,
-	duration INT NOT NULL
+	name VARCHAR(64) NOT NULL,
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE Artist (
-	id VARCHAR(22) NOT NULL PRIMARY KEY,
-	name VARCHAR(64) NOT NULL
+	id VARCHAR(22) NOT NULL,
+	name VARCHAR(64) NOT NULL,
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE Album (
-	id VARCHAR(22) NOT NULL PRIMARY KEY,
+	id VARCHAR(22) NOT NULL,
 	image VARCHAR(128),
 	name VARCHAR(64) NOT NULL,
 	type VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
 	rel_date VARCHAR(32),
-	num_tracks INT
+	num_tracks INT,
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE SongAlbum (
@@ -47,8 +51,8 @@ CREATE TABLE SongAlbum (
 );
 
 CREATE TABLE SongArtist (
-	artist_id VARCHAR(22) NOT NULL,
 	song_id VARCHAR(22) NOT NULL,
+	artist_id VARCHAR(22) NOT NULL,
 	PRIMARY KEY (artist_id, song_id),
 	FOREIGN KEY(artist_id) REFERENCES Artist(id) ON DELETE CASCADE,
 	FOREIGN KEY(song_id) REFERENCES Song(id) ON DELETE CASCADE
