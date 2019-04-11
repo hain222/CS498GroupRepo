@@ -5,11 +5,23 @@
 	<h1 style=color:#0033A0>Albums ({{ albums|length }})</h1>
 	<div class="row">
 		{% for album in albums %}
-		<p>
-			<a href="{{ album.id }}">
-				{{ album.name }}
-			</a>
-		</p>
+		<div class="col s12 m4">
+			<div class="card">
+				<div class="card-image">
+					<img src="{{ album.image }}">
+				</div>
+				<div class="card-content">
+					<p>
+						<a href="/albums/{{ album.id }}">
+							{{ album.name }}
+						</a>
+					</p>
+				</div>
+				<div class="card-action">
+					<a href="{{ album.link }}">Show on Spotify</a>
+				</div>
+			</div>
+		</div>
 		{% endfor %}
 	</div>
 </div>

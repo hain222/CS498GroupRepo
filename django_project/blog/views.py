@@ -68,7 +68,7 @@ def album(request, albumid):
 		request,
 		'blog/album.html',
 		{
-			'title': 'album',
+			'title': album.name,
 			'album': album,
 			'songs': songs
 		}
@@ -92,7 +92,7 @@ def artist(request, artistid):
 		request,
 		'blog/artist.html',
 		{
-			'title': 'Artists',
+			'title': artist.name,
 			'artist': artist
 		}
 	)
@@ -148,7 +148,7 @@ def song(request, songid):
 	# print(time)
 
 	context = {
-		'title': 'song',
+		'title': song.name,
 		'song': song,
 		'time': time
 	}
