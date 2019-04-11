@@ -21,24 +21,24 @@ CREATE TABLE User (
 CREATE TABLE Song (
 	duration INT NOT NULL,
 	id VARCHAR(22) NOT NULL,
-	link VARCHAR(53) NOT NULL,
-	name VARCHAR(64) NOT NULL,
+	link VARCHAR(100) NOT NULL,
+	name VARCHAR(100) NOT NULL,
 	PRIMARY KEY (id)
 );
 
 CREATE TABLE Artist (
 	id VARCHAR(22) NOT NULL,
 	image VARCHAR(64),
-	link VARCHAR(53) NOT NULL,
-	name VARCHAR(64) NOT NULL,
+	link VARCHAR(100) NOT NULL,
+	name VARCHAR(100) NOT NULL,
 	PRIMARY KEY (id)
 );
 
 CREATE TABLE Album (
 	id VARCHAR(22) NOT NULL,
 	image VARCHAR(64),
-	link VARCHAR(53) NOT NULL,
-	name VARCHAR(64) NOT NULL,
+	link VARCHAR(100) NOT NULL,
+	name VARCHAR(100) NOT NULL,
 	type VARCHAR(15) NOT NULL, -- types include: single, album, or compilation
 	rel_date VARCHAR(32),
 	num_tracks INT,
@@ -54,8 +54,8 @@ CREATE TABLE SongAlbum (
 );
 
 CREATE TABLE SongArtist (
-	song_id VARCHAR(22) NOT NULL,
 	artist_id VARCHAR(22) NOT NULL,
+	song_id VARCHAR(22) NOT NULL,
 	PRIMARY KEY (artist_id, song_id),
 	FOREIGN KEY(artist_id) REFERENCES Artist(id) ON DELETE CASCADE,
 	FOREIGN KEY(song_id) REFERENCES Song(id) ON DELETE CASCADE
