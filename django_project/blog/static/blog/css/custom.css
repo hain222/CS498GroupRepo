@@ -13,3 +13,16 @@ nav {
 .card-content {
 	height: 120px;
 }
+
+br {
+	display: block;
+	content: "";
+	margin-top: 2;
+}
+
+a{
+	color: #0033A0;
+}
+a.hover{
+	color: #ADD8E6;
+}

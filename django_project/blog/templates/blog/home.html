@@ -18,8 +18,10 @@
 						{% endif %}
 					{% endfor %}
           <span class="card-title">
-						<a href="/songs/{{ song.id }}">
+						<a style= "font-weight:500" href="/songs/{{ song.id }}">
+						<font color= white>
 							{{ song.name }}
+						</font>
 						</a>
 					</span>
         </div>
@@ -27,11 +29,19 @@
           <p>
 						{% for key, value in songartistdict.items %}
 							{% if song.id == key %}
+							<center>
+							<a style="font-weight:500" href="/songs/{{song.id}}">
+	                                                        {{ song.name }}
+							</center>
+							</a>
+							<br>
 								{% for v in value %}
 									{% for a in artists %}
 										{% if v == a.id %}
+											<center>
 											<a href="/artists/{{ a.id }}">
 												{{ a.name }}
+											</center>
 											</a>
 										{% endif %}
 									{% endfor %}
