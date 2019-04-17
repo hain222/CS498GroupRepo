@@ -10,6 +10,17 @@ nav {
   background-color: #0033A0;
 }
 
+.card-image {
+	display: flex;
+	height: 400px;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.card-image img {
+	margin: auto;
+}
+
 .card-content {
 	height: 120px;
 }
