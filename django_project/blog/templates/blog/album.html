@@ -7,18 +7,18 @@
     <p>
       Type: {{ album.type }}
       <br>
-      Release Date: {{ album.rel_date }}
+      Release: {{ album.rel_date }}
       <br>
       Amount of tracks: {{ album.num_tracks }}
       <br>
-      <a href="{{ album.link }}">album spotify link</a>
+      <a href="{{ album.link }}">Apotify link</a>
     </p>
     <img src="{{ album.image }}" alt="">
     <table>
-      <h4>songs</h4>
+      <h4>Songs</h4>
       <tr>
-        <th>id</th>
-        <th>title</th>
+        <th>ID</th>
+        <th>Title</th>
       </tr>
       {% for song in songs %}
       <tr>
