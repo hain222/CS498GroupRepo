@@ -3,11 +3,59 @@
 {% block content %}
 <div class="container">
 	<h1>{{ artist.name }}</h1>
-	<p>
-		id: {{ artist.id }}
-		<br>
-		<a href="{{ artist.link }}">Spotify link</a>
-	</p>
-	<img src="{{ artist.image }}" alt="">
+	<div class="row">
+		<div class="col s12 m6">
+			<div class="">
+				<h4>Songs</h4>
+				{% if artist_song_ids|length > 0 %}
+					<table>
+						{% for song in songs %}
+							{% for as in artist_song_ids %}
+								{% if as.song_id == song.id %}
+								<tr>
+									<td>
+										<a href="/songs/{{ song.id }}">
+											{{ song.name }}
+										</a>
+									</td>
+								</tr>
+								{% endif %}
+							{% endfor %}
+						<br>
+						{% endfor %}
+					</table>
+				{% else %}
+					<p>None to show 😅</p>
+				{% endif %}
+			</div>
+			<div class="">
+				<h4>Albums</h4>
+				{% if artist_album_ids|length > 0 %}
+					<table>
+						{% for album in albums %}
+							{% for as in artist_album_ids %}
+								{% if as.album_id == album.id %}
+								<tr>
+									<td>
+										<a href="/albums/{{ album.id }}">
+											{{ album.name }}
+										</a>
+									</td>
+								</tr>
+								{% endif %}
+							{% endfor %}
+						<br>
+						{% endfor %}
+					</table>
+				{% else %}
+					<p>None to show 😅</p>
+				{% endif %}
+			</div>
+		</div>
+		<div class="col s12 m6">
+				<img src="{{ artist.image }}" alt="" width="100%">
+				<a href="{{ artist.link }}">Spotify Link</a>
+		</div>
+	</div>
 </div>
 {% endblock content %}
