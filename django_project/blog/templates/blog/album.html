@@ -24,14 +24,16 @@
         </h5>
         <br>
         {% for a in artists %}
-          {{ a.name }}
+          <a href="/artists/{{ a.id }}">
+            {{ a.name }}
+          </a>
         <br>
         {% endfor %}
       </div>
     </div>
     <div class="col s12 m6">
       <img src="{{ album.image }}" alt="" width="100%">
-      <a href="{{ album.link }}">Spotify link</a>
+      <a href="{{ album.link }}">Spotify Link</a>
     </div>
   </div>
   <div class="row">
