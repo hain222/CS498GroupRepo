@@ -2,15 +2,40 @@
 
 {% block content %}
 <div class="container">
+  <h4>{{ song.name }}</h4>
   <div class="row">
-    <h4>{{ song.name }}</h4>
-    <p>
-      ID: {{ song.id }}
-      <br>
-      Duration: {{ time }}
-      <br>
-      <a href="{{ song.link }}">Spotify link</a>
-    </p>
+    <div class="col s12 m12">
+      <div class="">
+        <p>
+          ID: {{ song.id }}
+          <br>
+          Duration: {{ time }}
+          <br>
+          <a href="{{ song.link }}">Spotify link</a>
+        </p>
+      </div>
+      <div class="">
+        <h5>
+          {% if artists|length > 1 %}
+            Artists
+          {% else %}
+            Artist
+          {% endif %}
+        </h5>
+        <br>
+        {% for a in artists %}
+          {{ a.name }}
+        <br>
+        {% endfor %}
+      </div>
+      <div class="">
+        <h5>
+            Albums
+        </h5>
+        <br>
+          {{ album.name }}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock content %}

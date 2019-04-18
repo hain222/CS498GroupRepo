@@ -4,16 +4,37 @@
 <div class="container">
   <h1>{{ album.name }}</h1>
   <div class="row">
-    <p>
-      Type: {{ album.type }}
-      <br>
-      Release: {{ album.rel_date }}
-      <br>
-      Amount of tracks: {{ album.num_tracks }}
-      <br>
-      <a href="{{ album.link }}">Apotify link</a>
-    </p>
-    <img src="{{ album.image }}" alt="">
+    <div class="col s12 m6">
+      <div class="">
+        <p>
+          <strong>Type:</strong> {{ album.type }}
+          <br>
+          <strong>Release:</strong> {{ album.rel_date }}
+          <br>
+          <strong>Amount of tracks:</strong> {{ album.num_tracks }}
+        </p>
+      </div>
+      <div class="">
+        <h5>
+          {% if artists|length > 1 %}
+            Artists
+          {% else %}
+            Artist
+          {% endif %}
+        </h5>
+        <br>
+        {% for a in artists %}
+          {{ a.name }}
+        <br>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <img src="{{ album.image }}" alt="" width="100%">
+      <a href="{{ album.link }}">Spotify link</a>
+    </div>
+  </div>
+  <div class="row">
     <table>
       <h4>Songs</h4>
       <tr>

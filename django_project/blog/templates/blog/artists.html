@@ -9,15 +9,13 @@
 			<div class="card">
 				<div class="card-image">
 					<img src="{{ artist.image }}">
-				</div>
-				<div class="card-content">
-					<p>
-						<center>
-						<a style="font-weight:500" href="/artists/{{ artist.id }}">
+					<span class="card-title">
+						<a style="font-weight:500" href="{{ artist.id }}">
+						<font color="white">
 							{{ artist.name }}
+						</font>
 						</a>
-						</center>
-					</p>
+					</span>
 				</div>
 				<div class="card-action">
 					<a href="{{ artist.link }}">Show on Spotify</a>

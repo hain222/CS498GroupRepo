@@ -9,14 +9,15 @@
 			<div class="card">
 				<div class="card-image">
 					<img src="{{ album.image }}">
+					<div class="card-title">
+						<a style="font-weight:500;color:white" href="/albums/{{ album.id }}">
+							{{ album.name }}
+						</a>
+					</div>
 				</div>
 				<div class="card-content">
 					<p>
 						<center>
-						<a style="font-weighT:500" href="/albums/{{ album.id }}">
-							{{ album.name }}
-						</a>
-						<br>
 						{{ album.type }}
 						</center>
 					</p>

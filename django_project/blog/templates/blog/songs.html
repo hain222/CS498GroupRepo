@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-	<h1 style=color:#0033A0>Songs ({{ songs|length }})</h1>
+	<h1 style="color:#0033A0">Songs ({{ songs|length }})</h1>
 	<div class="row">
 		{% for song in songs %}
     <div class="col s12 m4">
@@ -17,10 +17,9 @@
 							{% endfor %}
 						{% endif %}
 					{% endfor %}
-          <span class="card-title">		
-						
-						<a style = "font-weight:500" href="{{ song.id }}">
-						<font color = white>
+          <span class="card-title">
+						<a style="font-weight:500" href="{{ song.id }}">
+						<font color="white">
 							{{ song.name }}
 						</font>
 						</a>
@@ -30,18 +29,13 @@
           <p>
 						{% for key, value in songartistdict.items %}
 							{% if song.id == key %}
-							<center>
-							<a style="font-weight:500" href="{{song.id}}">
-                                                        	{{song.name}}
-							<a/>
-							</center>
 								{% for v in value %}
 									{% for a in artists %}
 										{% if v == a.id %}
 											<center>
-											<a href="/artists/{{ a.id }}">
-												{{ a.name }}
-											</a>
+												<a href="/artists/{{ a.id }}">
+													{{ a.name }}
+												</a>
 											</center>
 										{% endif %}
 									{% endfor %}
