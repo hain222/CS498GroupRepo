@@ -40,6 +40,16 @@ def about(request):
 		}
 	)
 
+def login(request):
+	return render(
+		request,
+		'registration/login.html',
+		{
+			'title': 'Login'
+		}
+	)
+
+
 def albums(request):
 	albums = Album.objects.all()
 
@@ -73,6 +83,8 @@ def album(request, albumid):
 			'songs': songs
 		}
 	)
+
+
 
 def artists(request):
 	artists = Artist.objects.all()
