@@ -15,19 +15,19 @@
         </p>
       </div>
       <div class="">
-        <h5>
+        <h4>
           {% if artists|length > 1 %}
             Artists
           {% else %}
             Artist
           {% endif %}
-        </h5>
+        </h4>
         <br>
         {% for a in artists %}
           <a href="/artists/{{ a.id }}">
             {{ a.name }}
           </a>
-        <br>
+          <br>
         {% endfor %}
       </div>
     </div>
