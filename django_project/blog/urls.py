@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('', views.home, name='blog-home'),
 
@@ -14,4 +15,8 @@ urlpatterns = [
 
     path('songs/', views.songs, name='blog-songs'),
     path('songs/<songid>', views.song, name='blog-song'),
+
+    path('login/', views.login, name='registration-login')
+
+
 ]

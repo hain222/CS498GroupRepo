@@ -7,29 +7,29 @@
     <div class="col s12 m6">
       <div class="">
         <p>
-          Duration: {{ time }}
+          <strong>Duration:</strong> {{ time }}
         </p>
       </div>
       <div class="">
-        <h5>
+        <h4>
           {% if artists|length > 1 %}
             Artists
           {% else %}
             Artist
           {% endif %}
-        </h5>
+        </h4>
         <br>
         {% for a in artists %}
           <a href="/artists/{{ a.id }}">
             {{ a.name }}
           </a>
-        <br>
+          <br>
         {% endfor %}
       </div>
       <div class="">
-        <h5>
+        <h4>
             Album
-        </h5>
+        </h4>
         <br>
         <a href="/albums/{{ album.id }}">
           {{ album.name }}
