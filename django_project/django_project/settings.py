@@ -30,7 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'isdb498.herokuapp.com'
+    'isdb498.herokuapp.com',
+	'128.163.232.199'
 ]
 
 
