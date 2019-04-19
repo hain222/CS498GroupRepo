@@ -62,6 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,3 +140,4 @@ STATICFILES_DIRS = [
 
 # Activate Django-Heroku.
 # django_heroku.settings(locals())
+LOGIN_REDIRECT_URL = '/'
