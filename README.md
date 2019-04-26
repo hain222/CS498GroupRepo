@@ -18,6 +18,6 @@ Jordan George, Alex Hamlin, Harrison Inocencio, and Bryce Kushner
   - `python manage.py runserver` to start the server
   - go to http://127.0.0.1:8000/
 - To view the jupyter notebook which gets the spotify data:
-  - install python
-  - install jupyter
+  - Install python
+  - Install jupyter
   - `jupyter notebook create\ data\ files.ipynb`
